@@ -28,6 +28,13 @@ header h1 {
 	margin-bottom: 2rem;
 }
 
+main {
+	flex: 1 1 0%;
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+}
+
 /* Motivational Quote Section */
 h2 {
 	padding: 2rem 1rem;
@@ -36,6 +43,8 @@ h2 {
 	color: rgb(255, 255, 255);
 	margin-bottom: 3rem;
 }
+
+
 
 
 /* Box for filling in tasks with "add-task */
@@ -52,7 +61,7 @@ input, button {
 
 #new-task-input {
 	flex: 1 1 0%;
-	background-color:rgb(255, 255, 255);
+	background-color:rgb(121, 120, 120);
 	padding: 1rem;
 	border-radius: 1rem;
 	margin-right: 1rem;
@@ -82,3 +91,31 @@ input, button {
 #new-task-submit:active {
 	opacity: 0.6;
 }
+
+
+/* Task Lists */
+.task-list {
+	padding: 1rem;
+}
+
+#task .task {
+	display: flex;
+	justify-content: space-between;
+	background-color: aqua;
+	padding: 1rem;
+	border-radius: 1rem;
+	margin-bottom: 1rem;
+}
+
+.task .content {
+	flex: 1 1 0%;
+}
+
+.task .content .text {
+	color: aqua;
+	font-size: 1.124rem;
+	width: 100%;
+	display: block;
+	transition: 0.4s;
+}
+
