@@ -94,11 +94,11 @@ input, button {
 
 
 /* Task Lists */
-.task-list {
+.tasks-list {
 	padding: 1rem;
 }
 
-#task .task {
+#tasks .task {
 	display: flex;
 	justify-content: space-between;
 	background-color: aqua;
@@ -107,15 +107,49 @@ input, button {
 	margin-bottom: 1rem;
 }
 
-.task .content {
+.tasks .content {
 	flex: 1 1 0%;
 }
 
-.task .content .text {
-	color: aqua;
+.tasks .content .text {
+	color: rgb(255, 255, 255);
 	font-size: 1.124rem;
 	width: 100%;
 	display: block;
 	transition: 0.4s;
 }
 
+/* Edit and Delete buttons */
+.task .actions {
+	display: flex;
+	margin: 0 -0.5rem;
+}
+
+.task .actions button {
+	cursor: pointer;
+	margin: 0 0.5rem;
+	font-size: 1.125rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	transition: 0.4s;
+}
+
+.task .actions button:hover {
+	opacity: 0.8;
+}
+
+.task .actions button:active {
+	opacity: 0.6;
+}
+
+.task .actions .edit {
+	background-image: linear-gradient(to right, rgb(53, 62, 190), rgb(197, 21, 21));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.task .actions .delete {
+	background-image: linear-gradient(to right, rgb(53, 62, 190), rgb(197, 21, 21));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
