@@ -11,40 +11,34 @@
 <body>
 
     <header>
-        <h1>My Task List</h1>
-        <form id="new-task-form">
-            <input
-                type="text"
-                name="new-task-input"
-                id="new-task-input"
-                placeholder="What's on your mind today?!"/>
-            
-            <input
-                type="submit"
-                id="new-task-submit"
-                value="add-task"/>
-        </form>
+        <h1 id="intro"></h1>
+        <p id="seconde-intro"></p>
     </header>
 
     <main>
+        <h2>Motivational Quote</h2>
+        <section class="task-writer">
+            
+            <form id="new-task-form">
+                <input
+                type="text"
+                name="new-task-input"
+                id="new-task-input"
+                placeholder="What's on your mind today?"/>
+            
+                <input
+                type="submit"
+                id="new-task-submit"
+                value="add-task"/>
+            </form>
+        </section>
+        
+        <br>
+
+        <br>
 
         <section class="task-list">
-            <h2>Tasks</h2>
-                <div id="tasks">
-                    <div class="task">
-                        <div class="content">
-                            <input
-                            type="text"
-                            class="text"
-                            value="A new task"
-                            readonly>
-                        </div>
-                        <div class="actions">
-                            <button class="edit">Edit</button>
-                            <button class="delete">Delete</button>
-                        </div>
-                    </div>
-                </div>
+                <div id="tasks"></div>
         </section>
     </main>
 
