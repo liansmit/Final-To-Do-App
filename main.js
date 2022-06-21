@@ -69,9 +69,16 @@ window.addEventListener('load', () => {
 
 // Button: Delete
 
-const task_delete_el = document.createElement('button');
-task_delete_el.classList.add('delete');
-task_delete_el.innerHTML = 'Delete'
+  const task_delete_el = document.createElement('button');
+  task_delete_el.classList.add('delete');
+  task_delete_el.innerHTML = 'Delete'
+
+// Appending Actions
+
+  task_actions_el.appendChild(task_edit_el);
+  task_actions_el.appendChild(task_delete_el);
+
+  task_el.appendChild(task_actions_el);
 
  })
 })
