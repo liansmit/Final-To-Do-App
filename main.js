@@ -1,3 +1,4 @@
+// What day is it section:
 let day;
 switch (new Date().getDay()) {
   case 0:
@@ -22,3 +23,11 @@ switch (new Date().getDay()) {
     day = "Saturday";
 }
 document.getElementById("intro").innerHTML = "Today is " + day + " !";
+
+// AddEventListener
+window.addEventListener('load', () => {
+  const form = document.querySelector("#new-task-form");
+  const input = document.querySelector("new-task-input");
+  const list_el = document.querySelector("#tasks");
+
+})
