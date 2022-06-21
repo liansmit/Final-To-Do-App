@@ -1,4 +1,5 @@
 // What day is it section:
+
 let day;
 switch (new Date().getDay()) {
   case 0:
@@ -63,22 +64,25 @@ window.addEventListener('load', () => {
 
 // Button: Edit
 
-  const task_edit_el = document.createElement('button');
-  task_edit_el.classList.add('edit');
-  task_edit_el.innerHTML = 'Edit'
+    const task_edit_el = document.createElement('button');
+    task_edit_el.classList.add('edit');
+    task_edit_el.innerHTML = 'Edit'
 
 // Button: Delete
 
-  const task_delete_el = document.createElement('button');
-  task_delete_el.classList.add('delete');
-  task_delete_el.innerHTML = 'Delete'
+    const task_delete_el = document.createElement('button');
+    task_delete_el.classList.add('delete');
+    task_delete_el.innerHTML = 'Delete'
 
 // Appending Actions
 
-  task_actions_el.appendChild(task_edit_el);
-  task_actions_el.appendChild(task_delete_el);
+    task_actions_el.appendChild(task_edit_el);
+    task_actions_el.appendChild(task_delete_el);
 
-  task_el.appendChild(task_actions_el);
+    task_el.appendChild(task_actions_el);
 
+// List 
+
+    list_el.appendChild(task_el)
  })
 })
