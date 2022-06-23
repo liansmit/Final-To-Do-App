@@ -23,7 +23,7 @@ switch (new Date().getDay()) {
   case  6:
     day = "Saturday";
 }
-document.getElementById("intro").innerHTML = "Today is " + day + " !";
+document.getElementById("welcoming").innerHTML = "Today is " + day + " !";
 
 // AddEventListener
 window.addEventListener('load', () => {
