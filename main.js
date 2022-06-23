@@ -54,6 +54,7 @@ window.addEventListener('load', () => {
     task_input_el.classList.add('text');
     task_input_el.type = 'text';
     task_input_el.value = task;
+    task_input_el.setAttribute('readonly' , 'readonly')
     
     task_content_el.appendChild(task_input_el);
 
@@ -72,7 +73,7 @@ window.addEventListener('load', () => {
 
     const task_delete_el = document.createElement('button');
     task_delete_el.classList.add('delete');
-    task_delete_el.innerText = 'Delete'
+    task_delete_el.innerText = 'Delete';
 
 // Appending Actions
 
