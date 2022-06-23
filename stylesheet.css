@@ -87,6 +87,13 @@ input, button {
 	padding: 1rem;
 }
 
+.task-list h2 {
+	font-size: 1.5rem;
+	font-weight: 300;
+	color: rgb(37, 37, 37);
+	margin-bottom: 1rem;
+}
+
 #tasks .task {
 	display: flex;
 	justify-content: space-between;
@@ -106,6 +113,10 @@ input, button {
 	width: 100%;
 	display: block;
 	transition: 0.4s;
+}
+
+.task .content .text:not(:read-only) {
+	color: rgb(255, 255, 255);
 }
 
 /* Edit and Delete buttons */
