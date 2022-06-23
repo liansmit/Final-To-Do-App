@@ -24,8 +24,8 @@ header {
 header h1 {
 	font-size: 2.5rem;
 	font-weight: 300;
-	color: rgb(255, 255, 255);
-	margin-bottom: 2rem;
+	color: rgb(145, 145, 145);
+	margin-bottom: 1rem;
 }
 
 main {
@@ -35,21 +35,10 @@ main {
 	margin: 0 auto;
 }
 
-/* Motivational Quote Section */
-h2 {
-	padding: 2rem 1rem;
-	font-size: 1.5rem;
-	font-weight: 200;
-	color: rgb(255, 255, 255);
-	margin-bottom: 3rem;
-}
-
-
-
 
 /* Box for filling in tasks with "add-task */
 #new-task-form {
-	display: flex;;
+	display: flex;
 }
 
 input, button {
@@ -65,7 +54,7 @@ input, button {
 	padding: 1rem;
 	border-radius: 1rem;
 	margin-right: 1rem;
-	color:rgb(0, 0, 0);
+	color:rgb(87, 87, 87);
 	font-size: 1.25rem;
 }
 
@@ -74,10 +63,10 @@ input, button {
 }
 
 #new-task-submit {
-	color: rgb(255, 255, 255);
+	color: rgb(7, 7, 7);
 	font-size: 1.25rem;
-	font-weight: 500;
-	background-image: linear-gradient(to right, rgb(53, 62, 190), rgb(197, 21, 21));
+	font-weight: 700;
+	background-image: linear-gradient(to right, rgb(140, 243, 204), rgb(122, 240, 151));
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	cursor: pointer;
@@ -94,25 +83,25 @@ input, button {
 
 
 /* Task Lists */
-.tasks-list {
+.task-list {
 	padding: 1rem;
 }
 
 #tasks .task {
 	display: flex;
 	justify-content: space-between;
-	background-color: aqua;
+	background-color: rgb(140, 243, 204);
 	padding: 1rem;
 	border-radius: 1rem;
 	margin-bottom: 1rem;
 }
 
-.tasks .content {
+.task .content {
 	flex: 1 1 0%;
 }
 
-.tasks .content .text {
-	color: rgb(255, 255, 255);
+.task .content .text {
+	color: rgb(37, 37, 37);
 	font-size: 1.124rem;
 	width: 100%;
 	display: block;
@@ -143,13 +132,13 @@ input, button {
 }
 
 .task .actions .edit {
-	background-image: linear-gradient(to right, rgb(53, 62, 190), rgb(197, 21, 21));
+	background-image: linear-gradient(to right, rgb(41, 41, 41), rgb(116, 116, 116));
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
 
 .task .actions .delete {
-	background-image: linear-gradient(to right, rgb(53, 62, 190), rgb(197, 21, 21));
+	background-image: linear-gradient(to right, rgb(41, 41, 41), rgb(116, 116, 116));
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
