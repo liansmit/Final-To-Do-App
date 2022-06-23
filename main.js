@@ -1,4 +1,4 @@
-// What day is it section:
+// (1) What day is it section:
 
 let day;
 switch (new Date().getDay()) {
