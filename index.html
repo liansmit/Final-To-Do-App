@@ -12,41 +12,19 @@
 
 <body>
     <!--Heading Section (1 from main.js)-->
-    <header>
-        <h1 id="welcoming"></h1>
-        <form id="new-task-form">
-            <input
-            type="text"
-            name="new-task-input"
-            id="new-task-input"
-            placeholder="What's on your mind today?"/>
-            <input
-            type="submit"
-            id="new-task-submit"
-            value="Add task"/>
-        </form>
-    </header>
+   <div class="container">
+        <div class="to-do-app">
+            <h1 id="welcoming"></h1>
+            <form>
+                <input type="text" 
+                placeholder="What's on your mind today?">
+                <button 
+                type="submit">Add Task</button>
+            </form>
+            <ul></ul>
+        </div>
+   </div>
 
-    <main>
-        <section class="task-list">
-            <h2>My Tasks</h2>
-                <div id="tasks">
-                    <div class="task">
-                        <div class="content">
-                            <input type="text" 
-                                   class="text" 
-                                   value="A new task"
-                                   readonly>
-                        </div>
-                        <div class="actions">
-                            <button class="edit">Edit</button>
-                            <button class="delete">Delete</button>
-                        </div>
-                    </div>
-                </div>
-        </section>
-    </main>
-
-    <script src="main.js"></script>
+   <script src="main.js"></script>
 </body>
 </html>
