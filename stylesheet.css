@@ -1,111 +1,112 @@
+
 * {
-	margin: 0
-  }
-  
-  .container {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding-top: 50px;
-	background-color: #4b4d55;
-	height: 100vh;
-	font-family: sans-serif;
-  }
-  
+  margin: 0
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  background-color: #4a4a4b;
+  height: 100vh;
+  font-family: sans-serif;
+}
+
+.app {
+  width: 70%;
+}
+
+@media (max-width:768px) {
   .app {
-	width: 70%;
+    width: 90%;
   }
-  
-  @media (max-width:768px) {
-	.app {
-	  width: 90%;
-	}
-  }
-  
-  .app h1 {
-	color: white;
-	font-size: 40px;
-	padding: 10px 0;
-	text-align: center;
-	border-radius: .5rem .5rem 0 0;
-	background-color: #92f0bc;
-	font-family: "Rajdhani", sans-serif;
-  }
-  
-  .app form {
-	display: flex;
-	width: 100%;
-	background-color: #bdc4df;
-  }
-  
-  .app form input {
-	border: none;
-	background-color: #3c4979;
-	font-size: 18px;
-	color: white;
-	padding: 10px;
-	width: 90%;
-  }
-  
-  .app form button {
-	border: none;
-	color: white;
-	background-color: #1dd2af;
-	font-size: 25px;
-	font-weight: 600;
-	height: 42px;
-	width: 20%;
-  }
-  
-  .app ul {
-	list-style: none;
-	color: #e0e0e0;
-	padding: 0;
-  }
-  
-  .app ul li {
-	padding: 10px;
-	background-color: #262e4c;
-	border-bottom: 1px solid #3a4674;
-  }
-  
-  .check {
-	width: 0.8em;
-	height: 0.8em;
-	cursor: pointer;
-	border-radius: 50%;
-	background-color: white;
-	border: 1px solid rgb(255, 255, 255);
-	-webkit-appearance: none;
-  }
-  
-  .check:checked {
-	background-color: #1dd2af;
-  }
-  
-  .task {
-	font-size: 18px;
-	padding: 0 10px;
-	width: fit-content;
-	background: transparent;
-	border: none;
-	color: #fff;
-  }
-  
-  .task:focus {
-	outline: none;
-  }
-  
-  .app ul li i {
-	float: right;
-	cursor: pointer;
-  }
-  
-  .app ul li i:hover {
-	color: rgb(255, 82, 82);
-  }
-  
-  .completed {
-	color: rgba(192, 192, 192, 0.8);
-	text-decoration: line-through;
-  }
+}
+
+.app h1 {
+  color: white;
+  font-size: 40px;
+  padding: 10px 0;
+  text-align: center;
+  border-radius: .5rem .5rem 0 0;
+  background-color: #77af88;
+  font-family: sans-serif;
+}
+
+.app form {
+  display: flex;
+  width: 100%;
+  background-color: #2a2a2eaf;
+}
+
+.app form input {
+  border: none;
+  background-color: #ffffff;
+  font-size: 18px;
+  color: rgb(90, 83, 83);
+  padding: 12px;
+  width: 90%;
+}
+
+.app form button {
+  border: none;
+  color: white;
+  background-color: #636363;
+  font-size: 23px;
+  font-weight: 500;
+  height: 51px;
+  width: 15%;
+}
+
+.app ul {
+  list-style: none;
+  color: #e0e0e0;
+  padding: 0;
+}
+
+.app ul li {
+  padding: 11px;
+  background-color: #77af88;
+  border-bottom: 1px solid #ffffff;
+}
+
+.check {
+  width: 0.8em;
+  height: 0.8em;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(255, 255, 255);
+  -webkit-appearance: none;
+}
+
+.check:checked {
+  background-color: #4d4e52;
+}
+
+.task {
+  font-size: 20px;
+  padding: 0 10px;
+  width: fit-content;
+  background: transparent;
+  border: none;
+  color: #fff;
+}
+
+.task:focus {
+  outline: none;
+}
+
+.app ul li i {
+  float: right;
+  cursor: pointer;
+}
+
+.app ul li i:hover {
+  color: rgb(82, 76, 76);
+}
+
+.completed {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: line-through;
+}
