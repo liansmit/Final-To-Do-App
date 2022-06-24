@@ -1,155 +1,111 @@
 * {
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Fira sans", sans-serif;
-}
-
-/* Document*/
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    color: #FFF;
-    background-color: rgb(53, 52, 52);
-}
-
-/* Intro (what day is it?) */
-header {
-	padding: 2rem 1rem;
-	max-width: 800px;
-	width: 100%;
-	margin: 0 auto;
-}
-
-header h1 {
-	font-size: 2.5rem;
-	font-weight: 300;
-	color: rgb(145, 145, 145);
-	margin-bottom: 1rem;
-}
-
-main {
-	flex: 1 1 0%;
-	max-width: 800px;
-	width: 100%;
-	margin: 0 auto;
-}
-
-
-/* Box for filling in tasks with "add-task */
-#new-task-form {
+	margin: 0
+  }
+  
+  .container {
 	display: flex;
-}
-
-input, button {
-	appearance: none;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 50px;
+	background-color: #4b4d55;
+	height: 100vh;
+	font-family: sans-serif;
+  }
+  
+  .app {
+	width: 70%;
+  }
+  
+  @media (max-width:768px) {
+	.app {
+	  width: 90%;
+	}
+  }
+  
+  .app h1 {
+	color: white;
+	font-size: 40px;
+	padding: 10px 0;
+	text-align: center;
+	border-radius: .5rem .5rem 0 0;
+	background-color: #92f0bc;
+	font-family: "Rajdhani", sans-serif;
+  }
+  
+  .app form {
+	display: flex;
+	width: 100%;
+	background-color: #bdc4df;
+  }
+  
+  .app form input {
 	border: none;
+	background-color: #3c4979;
+	font-size: 18px;
+	color: white;
+	padding: 10px;
+	width: 90%;
+  }
+  
+  .app form button {
+	border: none;
+	color: white;
+	background-color: #1dd2af;
+	font-size: 25px;
+	font-weight: 600;
+	height: 42px;
+	width: 20%;
+  }
+  
+  .app ul {
+	list-style: none;
+	color: #e0e0e0;
+	padding: 0;
+  }
+  
+  .app ul li {
+	padding: 10px;
+	background-color: #262e4c;
+	border-bottom: 1px solid #3a4674;
+  }
+  
+  .check {
+	width: 0.8em;
+	height: 0.8em;
+	cursor: pointer;
+	border-radius: 50%;
+	background-color: white;
+	border: 1px solid rgb(255, 255, 255);
+	-webkit-appearance: none;
+  }
+  
+  .check:checked {
+	background-color: #1dd2af;
+  }
+  
+  .task {
+	font-size: 18px;
+	padding: 0 10px;
+	width: fit-content;
+	background: transparent;
+	border: none;
+	color: #fff;
+  }
+  
+  .task:focus {
 	outline: none;
-	background: none;
-}
-
-#new-task-input {
-	flex: 1 1 0%;
-	background-color:rgb(121, 120, 120);
-	padding: 1rem;
-	border-radius: 1rem;
-	margin-right: 1rem;
-	color:rgb(87, 87, 87);
-	font-size: 1.25rem;
-}
-
-#new-task-input::placeholder {
-	color: rgb(75, 83, 81);
-}
-
-#new-task-submit {
-	color: rgb(7, 7, 7);
-	font-size: 1.25rem;
-	font-weight: 700;
-	background-image: linear-gradient(to right, rgb(140, 243, 204), rgb(122, 240, 151));
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+  }
+  
+  .app ul li i {
+	float: right;
 	cursor: pointer;
-	transition: 0.5s;
-}
-
-#new-task-submit:hover {
-	opacity: 0.7;
-}
-
-#new-task-submit:active {
-	opacity: 0.6;
-}
-
-
-/* Task Lists */
-.task-list {
-	padding: 1rem;
-}
-
-.task-list h2 {
-	font-size: 1.5rem;
-	font-weight: 300;
-	color: rgb(37, 37, 37);
-	margin-bottom: 1rem;
-}
-
-#tasks .task {
-	display: flex;
-	justify-content: space-between;
-	background-color: rgb(140, 243, 204);
-	padding: 1rem;
-	border-radius: 1rem;
-	margin-bottom: 1rem;
-}
-
-.task .content {
-	flex: 1 1 0%;
-}
-
-.task .content .text {
-	color: rgb(37, 37, 37);
-	font-size: 1.124rem;
-	width: 100%;
-	display: block;
-	transition: 0.4s;
-}
-
-.task .content .text:not(:read-only) {
-	color: rgb(255, 255, 255);
-}
-
-/* Edit and Delete buttons */
-.task .actions {
-	display: flex;
-	margin: 0 -0.5rem;
-}
-
-.task .actions button {
-	cursor: pointer;
-	margin: 0 0.5rem;
-	font-size: 1.125rem;
-	font-weight: 700;
-	text-transform: uppercase;
-	transition: 0.4s;
-}
-
-.task .actions button:hover {
-	opacity: 0.8;
-}
-
-.task .actions button:active {
-	opacity: 0.6;
-}
-
-.task .actions .edit {
-	background-image: linear-gradient(to right, rgb(41, 41, 41), rgb(116, 116, 116));
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-}
-
-.task .actions .delete {
-	background-image: linear-gradient(to right, rgb(41, 41, 41), rgb(116, 116, 116));
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-}
+  }
+  
+  .app ul li i:hover {
+	color: rgb(255, 82, 82);
+  }
+  
+  .completed {
+	color: rgba(192, 192, 192, 0.8);
+	text-decoration: line-through;
+  }
